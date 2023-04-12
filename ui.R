@@ -19,7 +19,7 @@ dashboardPage(skin = "black", title="Protein Cleaver - A software tool for the p
     menuItem("How To Cite", tabName = "howToCite", icon = icon("feather-alt")),
     hr()
     )
-    ,tags$footer(id="cruklogodiv", align = "center", a(href="https://www.beatson.gla.ac.uk/Advanced-Technologies/proteomics.html", target="_target", img(src="cruk-beatson-logo.jpg", height="100%", width="100%")), div(class="footerdiv", "The development of Protein Cleaver has been supported by CRUK Beatson Institute", br()) )
+    # ,tags$footer(id="cruklogodiv", align = "center", a(href="https://www.beatson.gla.ac.uk/Advanced-Technologies/proteomics.html", target="_target", img(src="cruk-beatson-logo.jpg", height="100%", width="100%")), div(class="footerdiv", "The development of Protein Cleaver has been supported by CRUK Beatson Institute", br()) )
   ),
   dashboardBody(
     fluidPage(theme = shinytheme("yeti"),
