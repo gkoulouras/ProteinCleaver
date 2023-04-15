@@ -469,9 +469,15 @@ function(input, output, session) {
     for (i in 1:length(inputIDs)) {
       update_modal_progress(value = i / length(inputIDs),
                             text = paste0("Fetching protein information from UniProt: ", inputIDs[i], " (", i, "/",length(inputIDs), ")" ))
-      r <- GET(paste0("https://www.uniprot.org/uniprot/", inputIDs[i], ".fasta"))
-      if (r$status_code==200) {
-        content <- content(r, as="text", encoding="UTF-8")
+      req <- request(paste0("https://rest.uniprot.org/uniprotkb/", inputIDs[i], ".fasta"))
+      resp <- tryCatch(req %>% req_perform(), error = function(e) {
+               showNotification(paste0(inputIDs[i], " returned a bad request. Protein retrieval aborted!"), type="error", duration = 4)
+              })
+      print(resp)
+      if (!is.atomic(resp)) {
+        if (is.numeric(resp$status_code) & resp$status_code==200) {
+        content <- resp_body_string(resp, encoding="UTF-8")
+        # content <- content(resp, as="text", encoding="UTF-8")
         header <- substr(content, 1, regexpr("\n", content)-1)
         sequen <- substr(content, regexpr("\n", content)[1], nchar(content))
         sequen <- gsub("\n", "", sequen)
@@ -480,9 +486,7 @@ function(input, output, session) {
         AAset[j] <- AAStringSet(sequen)
         header_c[j] <- header
         j = j + 1
-      }
-      else{
-        showNotification(paste0("Accession ID ", inputIDs[i], " returned a bad request"), type="error", duration = 4)
+        } 
       }
     }
     names(AAset) <- header_c

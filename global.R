@@ -10,6 +10,10 @@ install.shinyjs <- !("shinyjs" %in% installed.packages()[,"Package"])
 if(install.shinyjs) install.packages("shinyjs")
 library(shinyjs, warn.conflicts = FALSE)
 
+# install.rCurl <- !("rCurl" %in% installed.packages()[,"Package"])
+# if(install.rCurl) install.packages("rCurl")
+# library(rCurl, warn.conflicts = FALSE)
+
 install.DT <- !("DT" %in% installed.packages()[,"Package"])
 if(install.DT) install.packages("DT")
 library(DT, warn.conflicts = FALSE)
@@ -109,9 +113,14 @@ if(install.httr) install.packages("httr")
 library(httr, warn.conflicts = FALSE)
 
 
+install.httr2 <- !("httr2" %in% installed.packages()[,"Package"])
+if(install.httr2) install.packages("httr2")
+library(httr2, warn.conflicts = FALSE)
+
+
 ## declaration of the maximum upload size ##
 options(shiny.maxRequestSize = 200*1024^2)
-options(shiny.sanitize.errors = TRUE) ##FALSE TO SHOW ERRORS, ALTERNATIVELY TRUE FOR DISTRIBUTION
+options(shiny.sanitize.errors = FALSE) ##FALSE TO SHOW ERRORS, ALTERNATIVELY TRUE FOR DISTRIBUTION
 options(dplyr.summarise.inform = FALSE)
 # options(future.globals.maxSize= 891289600)
 
