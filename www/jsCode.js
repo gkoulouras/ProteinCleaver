@@ -89,7 +89,7 @@ shinyjs.seque = function(unipID, seque, geneName, protName, startPos, endPos, id
 
   var seq=new Sequence(seque);
   var concat_title = unipID.concat(" | ", geneName.concat(" | ", protName));
-  seq.render("#sequence-viewer", {"charsPerLine": 100, "toolbar": false, "title": concat_title, "search" : true}   );
+  seq.render("#sequence-viewer", {"charsPerLine": 120, "toolbar": false, "title": concat_title, "search" : true}   );
   
   /*var onclickFun = function(e) {
 
