@@ -7,11 +7,8 @@ Protein Cleaver is a web-based application that systematically assesses regions 
 Protein Cleaver is developed in R Shiny and can be run on any platform with R installed. To execute Protein Cleaver, use the following commands in the R console:
 
 ```r
+install.packages('shiny')
 library(shiny)
 shiny::runGitHub('ProteinCleaver', 'gkoulouras', ref="main")
-```r
 
-If this is your first time running an R Shiny application and the 'shiny' package is not installed on your OS, you should also run the following command:
-```r
-install.packages('shiny')
-```r
+
