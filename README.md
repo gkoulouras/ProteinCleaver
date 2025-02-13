@@ -11,5 +11,4 @@ library(shiny)
 shiny::runGitHub('ProteinCleaver', 'gkoulouras', ref="main")
 
 If this is your first time running an R Shiny application and the 'shiny' package is not installed on your OS, you should also run the following command:
-```r
 install.packages('shiny')
