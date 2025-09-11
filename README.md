@@ -1,10 +1,10 @@
 # What is Protein Cleaver
 
-Protein Cleaver is a web-based application that systematically assesses regions of proteins that are likely or unlikely to be identified. It provides users with extensive sequence and structure annotation and visualization features.
+Protein Cleaver is a web-based tool designed to systematically evaluate protein regions based on their likelihood of identification. It offers users rich annotation and visualization capabilities for both sequence and structural data.
 
 # How to Run Protein Cleaver
 
-Protein Cleaver is developed in R Shiny and can be run on any platform with R installed. To execute Protein Cleaver, use the following commands in the R console:
+Protein Cleaver is built using R Shiny and is compatible with any system that has R installed. To launch Protein Cleaver, simply enter the following commands in the R console:
 
 ```r
 install.packages('shiny')
