@@ -19,7 +19,6 @@ dashboardPage(skin = "black", title="Protein Cleaver - A software tool for the p
     menuItem("How To Cite", tabName = "howToCite", icon = icon("feather-alt")),
     hr()
     )
-    # ,tags$footer(id="cruklogodiv", align = "center", a(href="https://www.beatson.gla.ac.uk/Advanced-Technologies/proteomics.html", target="_target", img(src="cruk-beatson-logo.jpg", height="100%", width="100%")), div(class="footerdiv", "The development of Protein Cleaver has been supported by CRUK Beatson Institute", br()) )
   ),
   dashboardBody(
     fluidPage(theme = shinytheme("yeti"),
@@ -60,7 +59,7 @@ dashboardPage(skin = "black", title="Protein Cleaver - A software tool for the p
                 fluidRow(
                   column(12, align="justify",
                           br(),
-                      h4(em("Protein Cleaver")," is a web-based application that performs ", em("in-silico"), " proteolytic digestion and systematic prediction of cleavages sites in proteins. The software provides interactive visualization features and molecular annotation that facilitate the selection of the optimal proteolytic enzyme for a given experiment.") # ,"em("Protein Cleaver")," has been designed with an emphasis on facilitating experimental planning as well as simplifying the ... 
+                      h4(em("Protein Cleaver")," is a web‑based platform for ", em("in-silico"), " proteolytic digestion and prediction of protein cleavage sites. It offers interactive visualizations and rich molecular annotations, helping researchers quickly identify the most effective proteolytic enzyme for their experiments.") 
                       )
                   )
         ),
@@ -396,3 +395,4 @@ dashboardPage(skin = "black", title="Protein Cleaver - A software tool for the p
 
 ) #end dashboardPage
 )
+
