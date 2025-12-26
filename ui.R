@@ -82,8 +82,8 @@ dashboardPage(skin = "black", title="Protein Cleaver - A software tool for the p
                          h4("How to cite Protein Cleaver"),
                          hr(),
                          p("If you use Protein Cleaver in your research or found it helpful in your analyses, please cite the following publication. Acknowledging the tool in your work contributes to its continued refinement and scientific impact. Thank you!"),
-                         br(), br(),
-                         p("Koulouras G, Xu Y. Protein cleaver: an interactive web interface for in silico prediction and systematic annotation of protein digestion-derived peptides. ", em("Front Bioinform."), " 2025 Sep 4;5:1576317. doi: 10.3389/fbinf.2025.1576317. PMID: 40980690; PMCID: PMC12445168.")
+                         br(),
+                         p(strong("Koulouras G, Xu Y. Protein cleaver: an interactive web interface for in silico prediction and systematic annotation of protein digestion-derived peptides. ", em("Front Bioinform."), " 2025 Sep 4;5:1576317. doi: 10.3389/fbinf.2025.1576317. PMID: 40980690; PMCID: PMC12445168."))
                   )
                 )
         ),
@@ -397,6 +397,7 @@ dashboardPage(skin = "black", title="Protein Cleaver - A software tool for the p
 
 ) #end dashboardPage
 )
+
 
 
 
