@@ -70,6 +70,9 @@ install.devtools <- !("devtools" %in% installed.packages()[,"Package"])
 if(install.devtools) install.packages("devtools")
 library(devtools, warn.conflicts = FALSE)
 
+install.biocmanager <- !("BiocManager" %in% installed.packages()[,"Package"])
+if(install.biocmanager) install.packages("BiocManager")
+
 install.cleaver <- !("cleaver" %in% installed.packages()[,"Package"])
 # if(install.cleaver) devtools::install_github("sgibb/cleaver")
 if(install.cleaver) BiocManager::install("cleaver")
@@ -169,6 +172,7 @@ rowCallback <- c(
   "  }",
   "}"
 )
+
 
 
 
