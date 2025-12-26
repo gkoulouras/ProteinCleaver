@@ -34,21 +34,17 @@ install.shinycssloaders <- !("shinycssloaders" %in% installed.packages()[,"Packa
 if(install.shinycssloaders) install.packages("shinycssloaders")
 library(shinycssloaders, warn.conflicts = FALSE)
 
-
 install.shinyalert <- !("shinyalert" %in% installed.packages()[,"Package"])
 if(install.shinyalert) install.packages("shinyalert")
 library(shinyalert, warn.conflicts = FALSE)
-
 
 install.shinyBS <- !("shinyBS" %in% installed.packages()[,"Package"])
 if(install.shinyBS) install.packages("shinyBS")
 library(shinyBS, warn.conflicts = FALSE)
 
-
 install.V8 <- !("V8" %in% installed.packages()[,"Package"])
 if(install.V8) install.packages("V8")
 library(V8, warn.conflicts = FALSE)
-
 
 install.tidyverse <- !("tidyverse" %in% installed.packages()[,"Package"])
 if(install.tidyverse) install.packages("tidyverse")
@@ -66,7 +62,6 @@ install.matrixStats <- !("matrixStats" %in% installed.packages()[,"Package"])
 if(install.matrixStats) install.packages("matrixStats")
 library(matrixStats, warn.conflicts = FALSE)
 
-
 install.shinyWidgets <- !("shinyWidgets" %in% installed.packages()[,"Package"])
 if(install.shinyWidgets) install.packages("shinyWidgets")
 library(shinyWidgets, warn.conflicts = FALSE)
@@ -76,19 +71,17 @@ if(install.devtools) install.packages("devtools")
 library(devtools, warn.conflicts = FALSE)
 
 install.cleaver <- !("cleaver" %in% installed.packages()[,"Package"])
-if(install.cleaver) devtools::install_github("sgibb/cleaver")
+# if(install.cleaver) devtools::install_github("sgibb/cleaver")
+if(install.cleaver) BiocManager::install("cleaver")
 library(cleaver, warn.conflicts = FALSE)
-
 
 install.Biostrings <- !("Biostrings" %in% installed.packages()[,"Package"])
 if(install.Biostrings) install.packages("Biostrings")
 library(Biostrings, warn.conflicts = FALSE)
 
-
 install.stringi <- !("stringi" %in% installed.packages()[,"Package"])
 if(install.stringi) install.packages("stringi")
 library(stringi, warn.conflicts = FALSE)
-
 
 install.shinyjs <- !("shinyjs" %in% installed.packages()[,"Package"])
 if(install.shinyjs) install.packages("shinyjs")
@@ -102,21 +95,17 @@ install.data.table <- !("data.table" %in% installed.packages()[,"Package"])
 if(install.data.table) install.packages("data.table")
 library(data.table, warn.conflicts = FALSE)
 
-
 install.shinybusy <- !("shinybusy" %in% installed.packages()[,"Package"])
 if(install.shinybusy) install.packages("shinybusy")
 library(shinybusy, warn.conflicts = FALSE)
-
 
 install.httr <- !("httr" %in% installed.packages()[,"Package"])
 if(install.httr) install.packages("httr")
 library(httr, warn.conflicts = FALSE)
 
-
 install.httr2 <- !("httr2" %in% installed.packages()[,"Package"])
 if(install.httr2) install.packages("httr2")
 library(httr2, warn.conflicts = FALSE)
-
 
 ## declaration of the maximum upload size ##
 options(shiny.maxRequestSize = 200*1024^2)
@@ -180,6 +169,7 @@ rowCallback <- c(
   "  }",
   "}"
 )
+
 
 
 
