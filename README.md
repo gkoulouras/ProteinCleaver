@@ -25,8 +25,8 @@ If you use Protein Cleaver in your research, please cite:
 
 # Contact
 
-For questions, suggestions, bug reports, or general feedback, please email:
+For questions, suggestions, or general feedback, please email:
 
 **gkoulouras {at symbol} gmail {dot symbol} com**
 
-I also encourage you to open an issue on GitHub so the discussion is visible to everyone.
+To report a bug, I encourage you to open an issue on GitHub so the discussion is visible to everyone.
