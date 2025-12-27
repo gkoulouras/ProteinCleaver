@@ -587,7 +587,7 @@ function(input, output, session) {
       incProgress(1/1)
       identifiable_proteins()
     })
-  }, escape = FALSE, selection = 'single',
+  }, server = FALSE, escape = FALSE, selection = 'single',
   options = list(columnDefs = list(list(className = 'dt-center', targets = c(3,4,5,6))), searchHighlight = TRUE, hover = FALSE, scrollX = TRUE, dom = 'lfrtip', pageLength = 10, lengthMenu = c(10, 25, 50, 100)), rownames = FALSE)
   
   
@@ -700,7 +700,7 @@ function(input, output, session) {
       incProgress(1/1)
       non_identifiable_proteins()
     })
-  }, escape = FALSE, selection = 'single',
+  }, server = FALSE, escape = FALSE, selection = 'single',
   options = list(columnDefs = list(list(className = 'dt-center', targets = c(3,4,5,6))), searchHighlight = TRUE, hover = FALSE, scrollX = TRUE, dom = 'lfrtip', pageLength = 10, lengthMenu = c(10, 25, 50, 100)), rownames = FALSE)
   
   
