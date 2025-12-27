@@ -20,4 +20,5 @@ Protein Cleaver is described in detail in the following peer‑reviewed article:
 # How to Cite
 
 If you use Protein Cleaver in your research, please cite:
+
 **Koulouras G, Xu Y. Protein cleaver: an interactive web interface for in silico prediction and systematic annotation of protein digestion-derived peptides. *Front Bioinform.* 2025 Sep 4;5:1576317. doi: 10.3389/fbinf.2025.1576317. PMID: 40980690; PMCID: PMC12445168.**
