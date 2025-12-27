@@ -10,6 +10,7 @@ Protein Cleaver is built using **R Shiny** and is compatible with any system tha
 install.packages('shiny')
 library(shiny)
 shiny::runGitHub('ProteinCleaver', 'gkoulouras', ref="main")
+```
 
 # Publication
 
